@@ -23,6 +23,7 @@ const Login = ()=> {
         const response = await res.json();
         localStorage.setItem("userCredentials", JSON.stringify(response));
         console.log(response);
+        window.location.href='./profile'
       })
       .then(console.log);
   };

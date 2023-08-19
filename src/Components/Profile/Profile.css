@@ -1,8 +1,8 @@
 #profile{
-    margin: 50px 100px;
+    margin: 50px 400px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 
 #image img{
@@ -11,14 +11,22 @@
     width: 200px;
 }
 
-#image, h2{
+#image, h2, h1{
     text-align: center;
+}
+
+p{
+    font-size: 1.1rem;
 }
 
 .card{
     border: 1px solid black;
     padding: 10px 20px;
     border-radius: 20px;
+}
+
+.card-content{
+    
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
