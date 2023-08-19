@@ -1,0 +1,62 @@
+#login-form{
+   font-size: 1.2rem;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+form{
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#login-form *,form, #heading > div, #input-fields  *, #submit-btn *{
+    background-color: white !important;
+}
+
+#submit-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit{
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(70, 70, 248) !important;
+    color: white;
+    padding: 10px 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#input{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 400px;
+    margin:10px 0px 20px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 1px solid black;
+}
+
+#forgot-pwd{
+    color: rgb(70, 70, 248);
+}
