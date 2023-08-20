@@ -37,7 +37,7 @@ const Login = ()=> {
         </div>
         <div id="input-fields">
           <div id="input">
-            <label>Your email</label>
+            <label>Username</label>
             <input
               onChange={(e) => setUsername(e.target.value)}
               value={username}

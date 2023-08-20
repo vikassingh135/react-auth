@@ -26,12 +26,24 @@ const Profile = () => {
     }
   };
 
+
+  const handleLogout = () =>{
+    if(localStorage.getItem("userCredentials")) {
+      localStorage.removeItem("userCredentials")
+    }
+    if(localStorage.getItem("userDetails")) {
+      localStorage.removeItem("userDetails")
+    }
+    window.location.href="./"
+  }
+
+
   useEffect(() => {
     loadUserDetails();
   }, []);
 
   return (
-    <div>
+    <div id="container">
       {Object.keys(userDetails).length > 0 && (
         <div id="profile">
           <h1>Welcome to Profile Page!!</h1>
@@ -201,6 +213,10 @@ const Profile = () => {
           </div>
         </div>
       )}
+
+      <div id="logout-div">
+      <button id="logoout-btn" onClick={handleLogout}>Logout</button>
+      </div>
     </div>
   );
 };
